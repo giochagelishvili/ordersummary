@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E8FF;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+/* BACKGROUND IMAGES */
+
+#background-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+#background-image-desktop {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: none;
+}
+
+/* MAIN CONTAINER STYLES */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 32rem;
+    border-radius: 1.25rem;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+/* GIRL ILLUSTRATION IMAGE */
+
+#image {
+    width: 100%;
+}
+
+/* ORDER SUMMARY AND DESCRIPTION TEXT STYLES */
+
+.text-container {
+    margin-top: 2rem;
+    padding: 0 2.5rem;
+}
+
+#order-summary, #description {
+    text-align: center;
+}
+
+#order-summary {
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+    color: #1F2E55;
+}
+
+#description {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #717FA6;
+
+    margin-top: 1.6rem;
+}
+
+/* PLAN STYLES */
+
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F9FF;
+
+    border-radius: 1.1rem;
+    width: 80%;
+
+    padding: 1.6rem;
+    margin-top: 2.4rem;
+}
+
+.icon-and-plan-container {
+    display: flex;
+    align-items: center;
+}
+
+.plan-and-price-container {
+    margin-left: 2rem;
+}
+
+#annual-plan, #price {
+    display: block;
+
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+#annual-plan {
+    font-weight: 900;
+    color: #1F2E55;
+}
+
+#price {
+    font-weight: 500;
+    color: #717FA6;
+}
+
+#change {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    color: #382AE1;
+    text-decoration: underline;
+
+    transition: 0.2s;
+}
+
+#change:hover {
+    color: #766CF1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* BUTTON STYLES */
+
+#proceed-to-payment-button {
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+
+    width: 85%;
+    background-color: #382AE1;
+
+    border: none;
+    border-radius: 1.1rem;
+
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+
+    margin-top: 2.4rem;
+    padding: 1.5rem 0;
+
+    transition: 0.2s;
+}
+
+#proceed-to-payment-button:hover {
+    background-color: #766CF1;
+    cursor: pointer;
+}
+
+#cancel-order-button {
+    background-color: transparent;
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 900;
+    color: #717FA6;
+    
+    border: none;
+
+    margin-bottom: 3.2rem;
+    margin-top: 2.4rem;
+
+    transition: 0.2s;
+}
+
+#cancel-order-button:hover {
+    color: #1F2E55;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+
+    .container {
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .container {
+        max-width: 350px;
+    }
+
+    #background-image-desktop {
+        display: block;
+    }
+
+    #background-image {
+        display: none;
+    }
+}
