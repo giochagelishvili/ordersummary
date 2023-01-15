@@ -135,12 +135,6 @@ body {
     transition: 0.2s;
 }
 
-#change:hover {
-    color: #766CF1;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /* BUTTON STYLES */
 
 #proceed-to-payment-button {
@@ -163,11 +157,6 @@ body {
     transition: 0.2s;
 }
 
-#proceed-to-payment-button:hover {
-    background-color: #766CF1;
-    cursor: pointer;
-}
-
 #cancel-order-button {
     background-color: transparent;
 
@@ -184,22 +173,22 @@ body {
     transition: 0.2s;
 }
 
-#cancel-order-button:hover {
-    color: #1F2E55;
-    cursor: pointer;
-}
+@media screen and (min-width: 1080px) {
 
-@media screen and (min-width: 700px) {
-
-    .container {
-        max-width: 450px;
+    #change:hover {
+        color: #766CF1;
+        text-decoration: none;
+        cursor: pointer;
     }
-}
 
-@media screen and (min-width: 900px) {
+    #proceed-to-payment-button:hover {
+        background-color: #766CF1;
+        cursor: pointer;
+    }
 
-    .container {
-        max-width: 350px;
+    #cancel-order-button:hover {
+        color: #1F2E55;
+        cursor: pointer;
     }
 
     #background-image-desktop {
